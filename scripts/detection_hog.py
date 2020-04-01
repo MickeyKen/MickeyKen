@@ -6,7 +6,7 @@ import roslib
 import sys
 import rospy
 import cv2
-from std_msgs.msg import String
+from std_msgs.msg import String, Int32MultiArray
 from sensor_msgs.msg import Image
 from cv_bridge import CvBridge, CvBridgeError
 import dlib
@@ -14,7 +14,8 @@ import dlib
 class image_converter:
 
     def __init__(self):
-        self.image_pub = rospy.Publisher("image_topic_2",Image)
+        # self.image_pub = rospy.Publisher("image_topic_2",Image)
+        self.pnt_pub = rospy.Publisher("human_point_xy", Int32MultiArray, queue_size=100)
         self.bridge = CvBridge()
         self.image_sub = rospy.Subscriber("/fixed_camera_rgb/rgb/image_raw",Image,self.callback)
 
@@ -31,16 +32,25 @@ class image_converter:
 
         dets = self.detector(self.cv_image)
 
+        array=[]
+
         for d in dets:
+            # array.append([int(d.left()), int(d.top()), int(d.right()), int(d.bottom())])
+            # array.append(int(d.left()))
+            array[len(array):len(array)] = [int(d.left()), int(d.top()), int(d.right()), int(d.bottom())]
             self.write_rec(d)
+        print (array)
 
         cv2.imshow("Image window", self.cv_image)
         cv2.waitKey(3)
 
-        try:
-            self.image_pub.publish(self.bridge.cv2_to_imgmsg(self.cv_image, "bgr8"))
-        except CvBridgeError as e:
-            print(e)
+        array_forPublish = Int32MultiArray(data=array)
+        self.pnt_pub.publish(array_forPublish)
+        # try:
+        #     self.image_pub.publish(self.bridge.cv2_to_imgmsg(self.cv_image, "bgr8"))
+        # except CvBridgeError as e:
+        #     print(e)
+
 
     def write_rec(self, d):
         cv2.rectangle(self.cv_image, (d.left(), d.top()), (d.right(), d.bottom()), (0, 0, 255), 2)
