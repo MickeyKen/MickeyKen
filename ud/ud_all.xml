@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<?xml-stylesheet type='text/xsl' href='image_metadata_stylesheet.xsl'?>
+<dataset>
+<name>imglab dataset</name>
+<comment>Created by imglab tool.</comment>
+<images>
+  <image file='/home/miki-desktop/ubiquitous_display_ws/src/cv_neuroud/picture/2020-04-05 11:14:36.113299.png'>
+    <box top='221' left='298' width='29' height='37'/>
+  </image>
+  <image file='/home/miki-desktop/ubiquitous_display_ws/src/cv_neuroud/picture/2020-04-05 11:26:02.826590.png'>
+  </image>
+  <image file='/home/miki-desktop/ubiquitous_display_ws/src/cv_neuroud/picture/2020-04-05 11:53:05.770465.png'>
+    <box top='41' left='393' width='38' height='60'/>
+  </image>
+  <image file='/home/miki-desktop/ubiquitous_display_ws/src/cv_neuroud/picture/2020-04-05 11:54:24.592571.png'>
+    <box top='78' left='328' width='41' height='43'/>
+  </image>
+  <image file='/home/miki-desktop/ubiquitous_display_ws/src/cv_neuroud/picture/2020-04-05 11:54:58.119730.png'>
+    <box top='66' left='197' width='49' height='45'/>
+  </image>
+  <image file='/home/miki-desktop/ubiquitous_display_ws/src/cv_neuroud/picture/2020-04-05 11:55:13.144137.png'>
+    <box top='60' left='124' width='57' height='54'/>
+  </image>
+  <image file='/home/miki-desktop/ubiquitous_display_ws/src/cv_neuroud/picture/2020-04-05 11:55:15.472013.png'>
+    <box top='59' left='125' width='56' height='56'/>
+  </image>
+  <image file='/home/miki-desktop/ubiquitous_display_ws/src/cv_neuroud/picture/2020-04-05 11:55:23.004439.png'>
+    <box top='59' left='126' width='51' height='54'/>
+  </image>
+  <image file='/home/miki-desktop/ubiquitous_display_ws/src/cv_neuroud/picture/2020-04-05 11:55:38.037613.png'>
+    <box top='111' left='135' width='39' height='51'/>
+  </image>
+  <image file='/home/miki-desktop/ubiquitous_display_ws/src/cv_neuroud/picture/2020-04-05 11:55:55.119344.png'>
+    <box top='114' left='133' width='49' height='50'/>
+  </image>
+  <image file='/home/miki-desktop/ubiquitous_display_ws/src/cv_neuroud/picture/2020-04-05 11:56:08.625327.png'>
+    <box top='158' left='179' width='44' height='41'/>
+  </image>
+  <image file='/home/miki-desktop/ubiquitous_display_ws/src/cv_neuroud/picture/2020-04-05 11:56:23.244401.png'>
+    <box top='316' left='144' width='45' height='44'/>
+  </image>
+  <image file='/home/miki-desktop/ubiquitous_display_ws/src/cv_neuroud/picture/2020-04-05 11:56:34.278775.png'>
+    <box top='358' left='114' width='56' height='43'/>
+  </image>
+  <image file='/home/miki-desktop/ubiquitous_display_ws/src/cv_neuroud/picture/2020-04-05 11:57:01.616946.png'>
+    <box top='388' left='130' width='55' height='49'/>
+  </image>
+  <image file='/home/miki-desktop/ubiquitous_display_ws/src/cv_neuroud/picture/2020-04-05 11:57:11.048388.png'>
+  </image>
+  <image file='/home/miki-desktop/ubiquitous_display_ws/src/cv_neuroud/picture/2020-04-05 11:57:33.269771.png'>
+    <box top='398' left='277' width='40' height='54'/>
+  </image>
+  <image file='/home/miki-desktop/ubiquitous_display_ws/src/cv_neuroud/picture/2020-04-05 12:08:25.583657.png'>
+    <box top='398' left='274' width='43' height='54'/>
+  </image>
+  <image file='/home/miki-desktop/ubiquitous_display_ws/src/cv_neuroud/picture/2020-04-05 12:10:10.870153.png'>
+    <box top='395' left='344' width='43' height='55'/>
+  </image>
+  <image file='/home/miki-desktop/ubiquitous_display_ws/src/cv_neuroud/picture/picture2020-04-05 12:05:54.903599.png'>
+    <box top='400' left='277' width='40' height='53'/>
+  </image>
+</images>
+</dataset>
