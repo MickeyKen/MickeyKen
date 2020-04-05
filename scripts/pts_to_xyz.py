@@ -16,12 +16,17 @@ class Homograpy:
         pts_src = np.array([[10,460], [600,460], [600,20],[10,20]],np.float32)
         pts_org = np.array([[3, -4],[3, 4],[-3, 4],[-3, -4]],np.float32)
         self.h, self.status = cv2.findHomography(pts_src, pts_org)
-        self.h = np.linalg.inv(self.h)
+        # self.h = np.linalg.inv(self.h)
 
     def callback(self,data):
         if data.data:
             print ("human number :", len(data.data)/4)
-
+            p = np.float32([[data.data[0], data.data[1], 1.0]])
+            p = p.T
+            p = np.dot(self.h, p)
+            p = p / p[2][0]
+            #print f
+            print (p[0][0], p[1][0])
 
 
 def main(args):

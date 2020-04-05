@@ -42,15 +42,11 @@ class image_converter:
         array=[]
 
         for d in human_dets:
-            # array.append([int(d.left()), int(d.top()), int(d.right()), int(d.bottom())])
-            # array.append(int(d.left()))
             array[len(array):len(array)] = [int(d.left()), int(d.top()), int(d.right()), int(d.bottom())]
             self.write_rec(d,0,0,255)
 
         for d in ud_dets:
-            # array.append([int(d.left()), int(d.top()), int(d.right()), int(d.bottom())])
-            # array.append(int(d.left()))
-            array[len(array):len(array)] = [int(d.left()), int(d.top()), int(d.right()), int(d.bottom())]
+            # array[len(array):len(array)] = [int(d.left()), int(d.top()), int(d.right()), int(d.bottom())]
             self.write_rec(d,255,0,0)
 
         cv2.imshow("Image window", self.cv_image)
